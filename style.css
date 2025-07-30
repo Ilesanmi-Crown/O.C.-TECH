@@ -1,0 +1,454 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100%;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  background-color: whitesmoke;
+  font-style: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding:  1rem;
+}
+
+.section{
+  max-width: 1440px;
+  margin: auto;
+  padding: 2rem 3rem;
+}
+
+.hero{
+  background-image: linear-gradient(rgba(0, 0, 255, 0.286),rgba(0, 0, 0, 0.37)), url(/hero_bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 1rem 3rem;
+  background-size: cover;
+  border-bottom-right-radius: 20px;
+  border-radius: 20px;
+  color: white;
+  /* transition: 1s; */
+  border: none;
+  margin: 0.5rem;
+  position: relative;
+}
+
+.circle{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: black;
+  border-radius: 50%;
+  display: flex;
+  right: 12rem;
+  bottom: -3rem;
+  border: 7px solid whitesmoke ;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle i{
+  font-size: 30px;
+}
+
+ .text{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  animation: anmi 10s linear infinite;
+}
+
+@keyframes anmi{
+  0%{
+    transform: rotate(0deg);
+  }
+
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+.text span{
+  position: absolute;
+  left: 50%;
+  font-size: 0.9em;
+  transform-origin: 0 45px
+}
+
+.hero nav{
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  border: white 1px solid;
+  backdrop-filter: blur(15px) ;
+  border-radius: 10px;
+  align-items: center;
+}
+
+.hero nav .link-list{
+  display: flex;
+}
+
+.hero nav .link-list .link{
+  list-style: none;
+  margin: 0 10px;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.hero nav .link-list .link a{
+  color: white;
+  text-decoration: none;
+}
+
+.hero nav .link-list .link::after{
+  content: '';
+  width: 0px;
+  display: block;
+  margin: 0px;
+  height: 2px;
+  background-color: greenyellow;
+  transition: 0.5s;
+  border-radius: 10px;
+}
+
+.hero nav .link-list .link:hover::after{
+  width: 50%;
+}
+
+
+nav .btn{
+  background-color: greenyellow;
+  padding: 0.5rem 1rem;  
+  border: none;
+  border-radius: 7px;
+  font-size: 14px;
+}
+
+.hero-text{
+  width: 400px;
+  font-size: 50px;
+  margin: 4rem 0;
+  transition:  0.5s;
+}
+
+.services{
+  text-align: center;
+}
+
+.sub-topic{
+  color: rgb(68, 68, 137);
+  margin: 0.7rem 0;
+}
+
+.images{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr ));
+  justify-content: center;
+  gap: 2rem;
+  align-items: start;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.services .images img{
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+.topic{
+  font-weight: 800;
+  text-align: center;
+}
+
+.image i{
+  font-size: 30px;
+  border: 10px whitesmoke solid;
+  margin-left: -55px;
+  margin-bottom: -35px;
+  border-radius: 50%;
+  padding: 14px 16px;
+  color: whitesmoke;
+  background-color: black;
+}
+
+.image h2{
+  text-align: left;
+  margin-left: 1.1rem;
+}
+
+.repair_info{
+  font-size: 1.1em;
+  width: 90%;
+  margin: auto;
+  font-weight: 300;
+}
+
+.aboutus .topic{
+  margin-bottom: 10px;
+}
+.firstabout{
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  gap: 2rem;
+  margin: auto;
+}
+
+.firstabout p{
+  width: 70%;
+  text-align: center;
+  font-size: 1.1em;
+  line-height: 1.45em;
+  font-weight: 300;
+}
+.firstabout img{
+  align-items: center;
+}
+
+.secondabout img{
+  align-items: center;
+}
+
+.aboutus img{
+  width: 400px;
+  border-radius: 20px;
+}
+
+.secondabout{
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  gap: 2rem;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.secondabout p{
+  width: 70%;
+  text-align: center;
+  font-size: 1.1em;
+  line-height: 1.45em;
+  font-weight: 300;
+}
+.aboutus .circle{
+  color: white;
+  position: static;
+}
+
+.footer{  
+  text-align: center;
+  padding: 0rem 0rem;
+  width: 100%;
+}
+.footer::before{
+  content: "OC TECH";
+  font-size: 14.5em;
+  position: absolute;
+  font-weight: 700;
+  left: 11%;
+  margin-top: -2rem;
+  z-index: -1;
+  color: rgba(0, 0, 255, 0.336);
+}
+
+.footer img{
+  width: 600px;
+  margin-bottom: -7rem;
+  z-index: 20;
+  position: relative;
+}
+
+.shadow{
+  height: 10px;
+  width: 300px;
+  position: absolute;
+  bottom: -1850px;
+  left: 40%;
+  z-index: 1;
+  box-shadow: 0px 100px 100px 20px black;
+}
+
+.footer_content{
+  display: grid;
+  width: 100%;
+  margin-top: -10rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-content: center;
+  padding-top: 15rem;
+  padding-left: 2rem ;
+  padding-right: 2rem ;
+  background-color: #004D82;
+}
+
+.footer_content .col{
+  color: white;
+  text-align: left;
+}
+
+
+.first p{
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+}
+
+.socials{
+  width: 50px;
+  gap: 1rem;
+  margin-top: 10px;
+  display: flex;
+}
+
+.socials a{
+  color: black;
+  padding: 7px;
+  background-color: white;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+.col h2{
+  font-weight: 500;
+}
+.second a, .third a{
+  color: white;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+.second{
+  margin-left: 10rem;
+}
+
+.second li{
+  list-style: none;
+  margin: 1rem 0;
+}
+.third p{
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* please don't froget to change the max-width back to 480  */
+@media only screen and (max-width: 500px){
+  .section{
+    padding: 2rem 1rem;
+  }
+
+  .hero-text{
+    text-align: center;
+  }
+  .hero nav .link-list{
+    display: none;
+  } 
+
+  .hero .hero-text{
+    font-size: 40px;
+  }
+
+  .hero .circle i{
+  font-size: 20px;
+}
+
+.circle{
+  width: 70px;
+  height: 70px;
+}
+
+.hero .circle{
+  right: 3.5rem;
+}
+
+.text span{
+  left: 50%;
+  font-size: 0.6em;
+  transform-origin: 0 29px
+}
+
+.services .images img{
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+.images h2{
+  text-align: center;
+  margin-left: -5rem;
+}
+
+.repair_info{
+  font-size: 0.9em;
+}
+
+.firstabout{
+  width: 100%;
+  align-items: start;
+  gap: 1rem;
+}
+
+.secondabout{
+  width: 100%;
+  align-items: start;
+  gap: 1rem;
+}
+
+
+.firstabout p{
+  font-size: 0.7em;
+}
+
+.firstabout img{
+width: 200px;
+border-radius: 10px;
+}
+.secondabout p{
+  font-size: 0.7em;
+}
+.secondabout img{
+width: 200px;
+border-radius: 10px;
+}
+
+.footer::before{
+  font-size: 6.4em;
+  left: 3%;
+  bottom: -137rem;
+}
+
+.footer img{
+  width: 450px;
+  margin-bottom: -14rem;  
+}
+
+.shadow{
+  left: 25%;
+  bottom: -2250px;
+  width: 260px;
+  box-shadow: 0px 100px 50px 10px black;
+}
+
+.footer_content{
+
+  margin: 0;
+}
+
+.second{
+  margin-left: 0;
+}
+
+.col{
+  margin: 1rem 0rem;
+}
+
+}
