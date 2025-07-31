@@ -29,7 +29,7 @@ html {
 }
 
 .hero{
-  background-image: linear-gradient(rgba(0, 0, 255, 0.286),rgba(0, 0, 0, 0.37)), url(hero_bg.jpg);
+  background-image: linear-gradient(rgba(0, 0, 255, 0.286),rgba(0, 0, 0, 0.37)), url(/hero_bg.jpg);
   background-position: center;
   background-repeat: no-repeat;
   padding: 1rem 3rem;
@@ -39,6 +39,7 @@ html {
   color: white;
   /* transition: 1s; */
   border: none;
+  margin: auto;
   margin: 0.5rem;
   position: relative;
 }
@@ -273,7 +274,7 @@ nav .btn{
   height: 10px;
   width: 300px;
   position: absolute;
-  bottom: -1850px;
+  bottom: -1830px;
   left: 40%;
   z-index: 1;
   box-shadow: 0px 100px 100px 20px black;
@@ -342,7 +343,7 @@ nav .btn{
 }
 
 /* please don't froget to change the max-width back to 480  */
-@media only screen and (max-width: 770px){
+@media only screen and (max-width: 748px){
   .section{
     padding: 2rem 1rem;
   }
@@ -423,7 +424,7 @@ border-radius: 10px;
 .footer::before{
   font-size: 6.4em;
   left: 3%;
-  bottom: -137rem;
+  bottom: -114rem;
 }
 
 .footer img{
@@ -433,9 +434,9 @@ border-radius: 10px;
 
 .shadow{
   left: 25%;
-  bottom: -2250px;
+  bottom: -1890px;
   width: 260px;
-  box-shadow: 0px 100px 50px 10px black;
+  box-shadow: 0px 100px 100px 15px black;
 }
 
 .footer_content{
