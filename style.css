@@ -34,7 +34,6 @@ html {
   background-repeat: no-repeat;
   padding: 1rem 3rem;
   background-size: cover;
-  border-bottom-right-radius: 20px;
   border-radius: 20px;
   color: white;
   /* transition: 1s; */
@@ -83,6 +82,7 @@ html {
   position: absolute;
   left: 50%;
   font-size: 0.9em;
+  font-weight: 500;
   transform-origin: 0 45px
 }
 
@@ -143,6 +143,41 @@ nav .btn{
   transition:  0.5s;
 }
 
+.but{
+  border: 1px solid white;
+  background-color: rgba(133, 133, 248, 0.18);
+  backdrop-filter: blur(15px);
+  border-radius: 12px;
+  padding: 6px 4px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.but a:first-child{
+  background-color: white;
+  text-decoration: none;
+  color: black;
+  padding: 8px 40px;
+  border-radius: 30px;
+  font-family: "poppins", sans-serif;
+  font-weight: 400;
+}
+
+.but span{
+  height: 1px;
+  width: 1px;
+  margin: -10px 0px;
+}
+
+.but a:last-child{
+  text-decoration: none;
+  color: white;
+  padding: 8px 10px;
+  font-size: 1.2em;
+  border-radius: 30px;
+}
+
 .services{
   text-align: center;
 }
@@ -200,10 +235,12 @@ nav .btn{
 }
 .firstabout{
   display: flex;
+  align-items: center;
   justify-content: space-between;
   width: 90%;
   gap: 2rem;
   margin: auto;
+
 }
 
 .firstabout p{
@@ -213,21 +250,22 @@ nav .btn{
   line-height: 1.45em;
   font-weight: 300;
 }
-.firstabout img{
-  align-items: center;
-}
+/* .firstabout img{
+  /* align-items: center; 
+} */
 
 .secondabout img{
   align-items: center;
 }
 
 .aboutus img{
-  width: 400px;
+  width: 350px;
   border-radius: 20px;
 }
 
 .secondabout{
   display: flex;
+  align-items: center;
   justify-content: space-between;
   width: 90%;
   gap: 2rem;
@@ -264,7 +302,7 @@ nav .btn{
 }
 
 .footer img{
-  width: 600px;
+  width: clamp(450px, 50%, 600px);
   margin-bottom: -7rem;
   z-index: 20;
   position: relative;
@@ -350,7 +388,10 @@ nav .btn{
   }
 
   .hero-text{
-    text-align: center;
+    text-align: left;
+    font-size: 30px;
+    margin-top: 4rem;
+
   }
   .hero nav .link-list{
     display: none;
@@ -376,11 +417,12 @@ nav .btn{
 .text span{
   left: 50%;
   font-size: 0.6em;
+  font-weight: 500;
   transform-origin: 0 29px
 }
 
 .services .images img{
-  max-width: 300px;
+  width: 300px;
   border-radius: 10px;
 }
 
@@ -395,13 +437,13 @@ nav .btn{
 
 .firstabout{
   width: 100%;
-  align-items: start;
+  align-items: center;
   gap: 1rem;
 }
 
 .secondabout{
   width: 100%;
-  align-items: start;
+  align-items: center;
   gap: 1rem;
 }
 
@@ -425,11 +467,10 @@ border-radius: 10px;
 .footer::before{
   font-size: 6.4em;
   left: 3%;
-  bottom: -130rem;
+  bottom: -134rem;
 }
 
 .footer img{
-  width: 450px;
   margin-bottom: -14rem;  
 }
 
