@@ -29,7 +29,7 @@ html {
 }
 
 .hero{
-  background-image: linear-gradient(rgba(0, 0, 255, 0.286),rgba(0, 0, 0, 0.37)), url(/hero_bg.jpg);
+  background-image: linear-gradient(rgba(0, 0, 255, 0.286),rgba(0, 0, 0, 0.37)), url(hero_bg.jpg);
   background-position: center;
   background-repeat: no-repeat;
   padding: 1rem 3rem;
@@ -479,3 +479,4 @@ border-radius: 10px;
 }
 
 }
+
