@@ -29,14 +29,14 @@ html {
 }
 
 .hero{
-  background-image: linear-gradient(rgba(0, 0, 255, 0.286),rgba(0, 0, 0, 0.37)), url(hero_bg.jpg);
+  background-image: linear-gradient(rgba(0, 0, 255, 0.286),rgba(0, 0, 0, 0.37)), url(/hero_bg.jpg);
   background-position: center;
   background-repeat: no-repeat;
   padding: 1rem 3rem;
+  padding-bottom: 3rem;
   background-size: cover;
   border-radius: 20px;
   color: white;
-  /* transition: 1s; */
   border: none;
   margin: auto;
   margin: 0.5rem;
@@ -143,7 +143,7 @@ nav .btn{
   transition:  0.5s;
 }
 
-.btn{
+.button{
   background-color: white;
   padding: 0.5rem 4rem;  
   border: none;
@@ -165,7 +165,7 @@ nav .btn{
 
 .images{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr ));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr ));
   justify-content: center;
   gap: 2rem;
   align-items: start;
@@ -268,10 +268,11 @@ nav .btn{
 }
 .footer::before{
   content: "OC TECH";
-  font-size: 14.5em;
-  position: absolute;
+  font-size: clamp(9rem, 50vw, 14em);
+  position: relative;
   font-weight: 700;
-  left: 11%;
+  bottom: -10rem;
+  /* left: 11%; */
   margin-top: -2rem;
   z-index: -1;
   color: rgba(0, 0, 255, 0.336);
@@ -280,18 +281,19 @@ nav .btn{
 .footer img{
   width: clamp(450px, 50%, 600px);
   margin-bottom: -7rem;
-  z-index: 20;
-  position: relative;
+  /* z-index: 20;  */
+  /* position: relative; */
 }
 
 .shadow{
   height: 10px;
   width: 300px;
-  position: absolute;
-  bottom: -1770px;
+  background-color: wheat;
+  /* position: absolute; */
+  bottom: -1900px;
   left: 40%;
-  z-index: 1;
-  box-shadow: 0px 100px 100px 20px black;
+  z-index: 3;
+  box-shadow: 0px 10px 50px 0px black;
 }
 
 .footer_content{
@@ -357,7 +359,17 @@ nav .btn{
   font-family: "Montserrat", sans-serif;
 }
 
-/* please don't froget to change the max-width back to 480  */
+/* @media only screen and (max-width:1000px) {
+  .footer::before{
+  font-size: clamp(4rem, 50vw, 14em);
+  position: absolute;
+  font-weight: 700;
+  left: 11%;
+  margin-top: -2rem;
+}
+} */
+
+
 @media only screen and (max-width: 748px){
   .section{
     padding: 2rem 1rem;
@@ -442,6 +454,7 @@ border-radius: 10px;
 
 .footer::before{
  display: none;
+ visibility: hidden;
 }
 
 .footer img{
@@ -466,4 +479,3 @@ border-radius: 10px;
 }
 
 }
-
