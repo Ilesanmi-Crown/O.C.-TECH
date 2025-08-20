@@ -6,9 +6,9 @@ text.innerHTML = text.innerText.split('').map(
 
 
 const images = [
-  "url(hero_bg.jpg)",
-  "url(hero2.jpg)",
-  "url(hero3.jpg)"
+  "url(assects/hero_bg.jpg)",
+  "url(assects/hero2.jpg)",
+  "url(assects/hero3.jpg)"
 ];
 
 let i = 0;
@@ -49,3 +49,4 @@ dots.forEach((dot, index) => {
 });
 
 changeBackground(0);
+
